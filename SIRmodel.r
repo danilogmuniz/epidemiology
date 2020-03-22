@@ -48,7 +48,7 @@ round(dat1[peak1,])
 
 #700 mil infectatos no apice da epidemia. O.O !!!
 
-#aqui, eh soh 1/5, ou uma pessoa a cada 5 dias
+#aqui, o contagio eh soh de 1/5, ou uma pessoa a cada 5 dias
 t2 = ode(y = c(S=1e6, I = 3, R = 0),
          times = seq(from=1, to=200, by=0.1),
          func = SIR,
@@ -68,6 +68,8 @@ dat2[peak2,]
 #300 mil infectados, ainda preocupante!
 
 #vamos desenhar graficos bonitinhos
+#(os graficos salvos aqui no github estao em resolucao menor
+# pra ajustar melhor no site).
 #cenario 1
 png("SIR1.png", height=12, width=16, units="cm",
     res=450)
